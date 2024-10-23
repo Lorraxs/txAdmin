@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "build": "cd ../ && node scripts/main-builder.js publish",
+    "build": "set GITHUB_REF=refs/tags/v9.9.9 &&cd ../ && node scripts/main-builder.js publish",
     "dev": "cd ../ && node scripts/main-builder.js dev",
     "test": "vitest",
     "typecheck": "tsc -p tsconfig.json --noEmit",
